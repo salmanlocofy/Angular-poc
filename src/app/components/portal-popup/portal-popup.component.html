@@ -1,0 +1,8 @@
+<app-portal>
+    <div class="portalPopupOverlay" [ngStyle]="getPopupStyle()" (click)="handleOverlayClick($event)">
+        <div #relContainer [ngStyle]="relativeStyle">
+            <ng-content>
+            </ng-content>
+        </div>
+    </div>
+</app-portal>
